@@ -122,7 +122,7 @@ const Contact = () => {
                                         </div>
                                         <div>
                                             <p className="text-xs text-slate-500 uppercase tracking-widest mb-1">GitHub</p>
-                                            <p className="text-slate-200 font-medium group-hover:text-white transition-colors">Chinnima28</p>
+                                            <p className="text-slate-200 font-medium group-hover:text-white transition-colors">chinmayievbs</p>
                                         </div>
                                     </motion.a>
                                 </div>

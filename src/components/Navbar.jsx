@@ -42,7 +42,7 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
-                        href="https://github.com/Chinnima28"
+                        href="https://github.com/chinmayievbs"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-400 hover:text-white transition-colors"
@@ -83,7 +83,7 @@ const Navbar = () => {
                                 </a>
                             ))}
                             <div className="flex space-x-4 pt-4 border-t border-white/5">
-                                <a href="https://github.com/Chinnima28" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
+                                <a href="https://github.com/chinmayievbs" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
                                     <Github size={20} />
                                 </a>
                             </div>
