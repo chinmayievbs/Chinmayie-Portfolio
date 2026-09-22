@@ -17,7 +17,7 @@ const About = () => {
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-white mb-6 relative inline-block">
                             About Me
-                            <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+                            <div className="border-b-2 border-accent w-16 mt-2 mx-auto"></div>
                         </h2>
                         <p className="text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto">
                             {data.personalInfo.bio}
@@ -26,8 +26,8 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                         {/* Stats & Current Learnings */}
-                        <div className="card-3d p-8 rounded-3xl group hover:border-purple-500/30 transition-all duration-500">
-                            <div className="flex items-center gap-4 mb-6">
+                        <div className="bg-surface rounded-2xl p-8 border border-surface/20 transition-all duration-500">
+                            <div className="flex items-center gap-4 mb-6 bg-accent/10 p-4 rounded-lg">
                                 <div className="p-3 bg-blue-500/10 rounded-2xl text-blue-400 group-hover:scale-110 transition-transform">
                                     <BookOpen size={28} />
                                 </div>
@@ -44,8 +44,8 @@ const About = () => {
                         </div>
 
                         {/* Fun Fact */}
-                        <div className="card-3d p-8 rounded-3xl flex flex-col justify-center relative overflow-hidden group hover:border-pink-500/30 transition-all duration-500">
-                            <Sparkles className="absolute -top-4 -right-4 text-pink-500/10 group-hover:text-pink-500/20 transition-colors" size={120} />
+                        <div className="bg-surface rounded-2xl p-8 border border-surface/20">
+
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                                 <span className="text-3xl">⚡</span> Fun Fact
                             </h3>

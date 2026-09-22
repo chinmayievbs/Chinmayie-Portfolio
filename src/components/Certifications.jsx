@@ -33,7 +33,7 @@ const Certifications = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="block group card-3d p-8 rounded-3xl transition-all duration-500 hover:border-blue-500/30 relative overflow-hidden"
+                            className="block bg-surface p-8 rounded-3xl border border-surface/20 hover:shadow-elevation transition-all duration-500 relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                                 <Award size={80} />

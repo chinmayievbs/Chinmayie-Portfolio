@@ -9,13 +9,16 @@ export default {
       colors: {
         background: "#0a0a0a",
         surface: "#151515",
-        text: "#e0e0e0",
+        text: "#f5f5f5",
         muted: "#777777",
-        accent: "#d97706", // warm amber accent
+        accent: "#ff4ecd", // electric pink accent
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         display: ["Playfair Display", "serif"],
+      },
+      boxShadow: {
+        elevation: "0 2px 8px rgba(0,0,0,0.3)",
       },
       typography: (theme) => ({
         DEFAULT: {

@@ -27,15 +27,15 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="group card-3d rounded-2xl overflow-hidden flex flex-col h-full hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+                            className="group bg-surface rounded-2xl overflow-hidden flex flex-col h-full border border-surface/20 hover:shadow-elevation"
                         >
-                            <div className="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative flex items-center justify-center overflow-hidden border-b border-slate-700/50">
-                                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/40 group-hover:to-purple-600/40 transition-colors duration-500"></div>
+                            <div className="h-48 bg-slate-800/60 relative flex items-center justify-center overflow-hidden border-b border-surface/20">
+                            
                                 <Code size={48} className="text-purple-400 opacity-60 group-hover:scale-110 group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(168,85,247,0.8)] transition-all duration-500 group-hover:rotate-12" />
                             </div>
 
                             <div className="p-8 flex flex-col flex-grow bg-slate-900/40 backdrop-blur-sm">
-                                <h3 className="text-2xl font-bold text-slate-100 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300 drop-shadow-sm">
+                                <h3 className="text-2xl font-bold text-slate-100 mb-3 transition-colors duration-300 drop-shadow-sm">
                                     {project.title}
                                 </h3>
                                 <p className="text-slate-400 mb-6 flex-grow relative z-10 text-md font-light leading-relaxed">

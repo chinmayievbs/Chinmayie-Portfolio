@@ -73,7 +73,7 @@ const Contact = () => {
                         </p>
                     </div>
 
-                    <div className="card-3d rounded-[2rem] overflow-hidden flex flex-col md:flex-row border border-white/10">
+                    <div className="bg-surface rounded-[2rem] overflow-hidden flex flex-col md:flex-row border border-surface/20">
                         {/* Contact Info Sidebar */}
                         <div className="md:w-5/12 p-10 bg-gradient-to-br from-purple-600/20 to-blue-600/20 backdrop-blur-2xl flex flex-col justify-between border-r border-white/5">
                             <div>

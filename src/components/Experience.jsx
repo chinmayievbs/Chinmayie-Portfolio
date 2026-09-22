@@ -13,7 +13,7 @@ const Experience = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4"><span className="text-gradient drop-shadow-md">Experience</span></h2>
+                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-accent">Experience</h2>
                     <p className="text-slate-400 max-w-2xl mx-auto text-lg font-light">
                         My professional journey and internships.
                     </p>
@@ -27,20 +27,33 @@ const Experience = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
-                            className="card-3d rounded-2xl p-8 mb-8 flex flex-col md:flex-row gap-6 items-start hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] group"
+                            className="flex items-start mb-8 gap-6"
                         >
-                            <div className="bg-gradient-to-br from-blue-500 to-purple-600 w-16 h-16 rounded-xl shadow-[0_0_15px_rgba(168,85,247,0.4)] flex-shrink-0 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
-                                <Briefcase size={28} className="text-white" />
+                            <div className="w-12 h-12 rounded-full bg-accent/10 flex-shrink-0 flex items-center justify-center shadow-elevation mr-4">
+                                <Briefcase size={20} className="text-accent" />
                             </div>
 
                             <div className="flex-1 text-left">
                                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                                    <h3 className="text-2xl font-bold text-slate-100 drop-shadow-sm">{exp.role}</h3>
+                                    <h3 className="text-2xl font-bold text-primary drop-shadow-sm">{exp.role}</h3>
+                                    {exp.duration && (
+                                        <span className="text-accent text-sm font-medium mt-2 md:mt-0 md:ml-4 px-3 py-1 bg-accent/10 rounded-full border border-accent/20 whitespace-nowrap">
+                                            {exp.duration}
+                                        </span>
+                                    )}
                                 </div>
-                                <h4 className="text-purple-400 font-semibold text-lg mb-4 tracking-wide">{exp.company}</h4>
-                                <p className="text-slate-400 leading-relaxed text-md font-light">
-                                    {exp.description}
-                                </p>
+                                <h4 className="text-secondary font-semibold text-lg mb-4 tracking-wide">{exp.company}</h4>
+                                {Array.isArray(exp.description) ? (
+                                    <ul className="list-disc list-outside ml-5 text-slate-400 leading-relaxed text-md font-light space-y-2 mb-4">
+                                        {exp.description.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="text-slate-400 leading-relaxed text-md font-light mb-4">
+                                        {exp.description}
+                                    </p>
+                                )}
                                 {exp.links && (
                                     <div className="mt-5 flex flex-wrap gap-3">
                                         {exp.links.map((link, i) => (
@@ -49,7 +62,7 @@ const Experience = () => {
                                                 href={link.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center text-sm px-4 py-1.5 bg-slate-800/50 backdrop-blur-sm text-slate-300 rounded-full hover:bg-purple-500/20 hover:text-purple-300 hover:border-purple-500/50 transition-all duration-300 shadow-sm border border-slate-700/50 hover:shadow-[0_0_10px_rgba(168,85,247,0.3)]"
+                                                className="inline-flex items-center text-sm px-3 py-1 rounded-full bg-surface border border-accent/30 text-secondary hover:bg-accent/10 hover:text-accent transition-colors"
                                             >
                                                 {link.name}
                                                 <ExternalLink size={14} className="ml-1.5" />

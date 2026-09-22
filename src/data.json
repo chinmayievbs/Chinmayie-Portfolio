@@ -1,7 +1,7 @@
 {
     "personalInfo": {
         "name": "CHINMAYIE V B S",
-        "role": "Web Developer",
+        "role": "Software Developer",
         "bio": "I'm a passionate developer specializing in data analysis, API integration, and creating innovative web and mobile applications. Currently, I'm learning how to integrate APIs into Chrome extensions and seeking opportunities to collaborate on open-source projects related to machine learning, mobile apps, or creative web solutions.",
         "learning": [
             "Integrating APIs with Chrome extensions",
@@ -84,9 +84,35 @@
     ],
     "experience": [
         {
+            "role": "Python & AI Developer Trainee",
+            "company": "Msquare Technologies Inc.",
+            "duration": "September 2026 \u2013 Present",
+            "description": [
+                "Developing solutions using Python and exploring practical applications of AI and agentic workflows.",
+                "Working with LangGraph to understand and build structured AI agent workflows.",
+                "Using AWS services as part of cloud-based development and deployment workflows.",
+                "Working with Docker for containerized application development and local environments.",
+                "Using Kiro as part of AI-assisted software development and engineering workflows.",
+                "Gaining hands-on experience with development, debugging, deployment, and real-world software engineering practices."
+            ]
+        },
+        {
+            "role": "Quantitative Analyst Intern",
+            "company": "Numerical Works",
+            "duration": "July 2026 \u2013 Present",
+            "description": [
+                "Developed Python-based quantitative trading strategies that analyze historical stock market data to generate rule-based buy and sell signals.",
+                "Built and tested rule-based trading strategies including Z-Score Mean Reversion, Pairs Trading, Rolling Mean Bounce, and Double Confirmation."
+            ]
+        },
+        {
             "role": "Web Developer Intern",
             "company": "Numerical Works",
-            "description": "Contributed to the open-source project Injee, a no-configuration instant database for front-end developers. Developed and enhanced the Injee Admin interface, refactored the SQL export UI, and implemented robust CRUD operations using Flask and SQLAlchemy while resolving database concurrency issues.",
+            "duration": "March 2026 \u2013 June 2026",
+            "description": [
+                "Developed Injee-Flask, a Flask-based backend blueprint that converts mock data into functional Python APIs and serves as a validation reference for automated code generation.",
+                "Worked with Git/GitHub, pull requests, code reviews, and industry-standard collaborative development workflows."
+            ],
             "links": [
                 {
                     "name": "Project Page",

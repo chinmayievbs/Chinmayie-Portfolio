@@ -24,9 +24,9 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <h2 className="text-purple-400 font-bold text-xl tracking-widest mb-2 uppercase drop-shadow-sm">Hello, I'm</h2>
+                        <h2 className="text-accent font-bold text-xl tracking-widest mb-2 uppercase drop-shadow-sm">Hello, I'm</h2>
                         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 whitespace-nowrap tracking-tight">
-                            <span className="text-gradient drop-shadow-lg">{data.personalInfo.name}</span>
+                            <span className="text-accent drop-shadow-lg">{data.personalInfo.name}</span>
                         </h1>
                         <h3 className="text-2xl md:text-4xl text-slate-200 font-medium mb-6 drop-shadow-md">
                             {data.personalInfo.role}
@@ -35,14 +35,13 @@ const Hero = () => {
                             {data.personalInfo.bio}
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start mb-10">
-                            <a
-                                href="#projects"
-                                className="group px-8 py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] flex items-center justify-center gap-2"
-                            >
-                                View Projects
-                                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                            </a>
+                                <a
+                                    href="#projects"
+                                    className="group px-8 py-3.5 bg-accent text-white rounded-lg font-semibold transition-all hover:shadow-elevation flex items-center justify-center gap-2"
+                                >
+                                    View Projects
+                                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </a>
                             <a
                                 href={data.personalInfo.links.resume}
                                 className="group px-8 py-3.5 bg-slate-800/50 backdrop-blur-md text-white border border-slate-700 rounded-full font-semibold transition-all hover:bg-slate-700/50 hover:border-slate-500 hover:shadow-lg flex items-center justify-center gap-2"
@@ -51,7 +50,7 @@ const Hero = () => {
                                 Download Resume
                                 <Download size={18} className="group-hover:translate-y-1 transition-transform" />
                             </a>
-                        </div>
+
 
                         <div className="flex gap-5 justify-center md:justify-start">
                             {Object.entries(data.personalInfo.links).map(([key, url]) => {
@@ -80,12 +79,12 @@ const Hero = () => {
                         transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
                         className="relative float-3d"
                     >
-                        {/* Glowing backdrop for image */}
-                        <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                        {/* Subtle static backdrop for image */}
+                        <div className="absolute -inset-4 bg-accent/10 rounded-full blur-2xl opacity-20"></div>
                         
-                        <div className="card-3d w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-slate-700/50 relative shadow-[0_0_40px_rgba(168,85,247,0.2)]">
+                        <div className="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-slate-700/50 relative shadow-elevation">
                             <img 
-                                src="/photo.jpg" 
+                                src={`${import.meta.env.BASE_URL}photo.jpg`}
                                 alt="Profile" 
                                 className="w-full h-full object-cover z-10 transition-transform duration-700 hover:scale-110"
                                 onError={(e) => {
